@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">ADATesting</th></tr><tr><td><a href="#t0">Chrome1</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">26,290</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">ADATesting</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Chrome1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.java.TestSuitDriver.TestSuitRun</td><td><a href="#m0">ScriptExecution</a></td><td rowspan="1">1501265795134</td><td rowspan="1">20661</td></tr></tbody></table><h2>Chrome1</h2><h3 id="m0">com.java.TestSuitDriver.TestSuitRun#ScriptExecution</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>1</td><td>Search Hotel</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	
+
+******** Home_Page: Found 4 accessibility violations:
+1) Page must have means to bypass repeated blocks: https://dequeuniversity.com/rules/axe/2.0/bypass?application=axeAPI
+  a) [&quot;html&quot;]
+    Fix any of the following:
+      No valid skip link found
+      Page does not have a header
+      Page does not have a landmark region
+
+
+2) &lt;html&gt; element must have a lang attribute: https://dequeuniversity.com/rules/axe/2.0/html-has-lang?application=axeAPI
+  a) [&quot;html&quot;]
+    Fix any of the following:
+      The &lt;html&gt; element does not have a lang attribute
+
+
+3) Form elements must have labels: https://dequeuniversity.com/rules/axe/2.0/label?application=axeAPI
+  a) [&quot;#username&quot;]
+    Fix any of the following:
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible
+      Form element does not have an implicit (wrapped) &lt;label&gt;
+      Form element does not have an explicit &lt;label&gt;
+      Element has no title attribute or the title attribute is empty
+
+
+  b) [&quot;#password&quot;]
+    Fix any of the following:
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible
+      Form element does not have an implicit (wrapped) &lt;label&gt;
+      Form element does not have an explicit &lt;label&gt;
+      Element has no title attribute or the title attribute is empty
+
+
+4) Data or header cells should not be used to give caption to a data table.: https://dequeuniversity.com/rules/axe/2.0/table-fake-caption?application=axeAPI
+  a) [&quot;#login_form &gt; .login&quot;]
+    Fix all of the following:
+      The first row of the table should be a caption instead of a table cell
+
+
+
+******** FlightSearch Page: Found 7 accessibility violations:
+1) Elements must have sufficient color contrast: https://dequeuniversity.com/rules/axe/2.0/color-contrast?application=axeAPI
+  a) [&quot;#search_form &gt; .login &gt; tbody &gt; tr:nth-of-type(2) &gt; td:nth-of-type(1) &gt; .reg_error&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.45 (foreground color: #ff0000, background color: #eeeeee, font size: 9.0pt, font weight: normal)
+
+
+  b) [&quot;#search_form &gt; .login &gt; tbody &gt; tr:nth-of-type(5) &gt; td:nth-of-type(1) &gt; .reg_error&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.45 (foreground color: #ff0000, background color: #eeeeee, font size: 9.0pt, font weight: normal)
+
+
+  c) [&quot;#search_form &gt; .login &gt; tbody &gt; tr:nth-of-type(6) &gt; td:nth-of-type(1) &gt; .reg_error&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.45 (foreground color: #ff0000, background color: #eeeeee, font size: 9.0pt, font weight: normal)
+
+
+  d) [&quot;#search_form &gt; .login &gt; tbody &gt; tr:nth-of-type(7) &gt; td:nth-of-type(1) &gt; .reg_error&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.45 (foreground color: #ff0000, background color: #eeeeee, font size: 9.0pt, font weight: normal)
+
+
+  e) [&quot;#search_form &gt; .login &gt; tbody &gt; tr:nth-of-type(8) &gt; td:nth-of-type(1) &gt; .reg_error&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.45 (foreground color: #ff0000, background color: #eeeeee, font size: 9.0pt, font weight: normal)
+
+
+  f) [&quot;body &gt; .content &gt; tbody &gt; tr:nth-of-type(1) &gt; td:nth-of-type(3) &gt; .right_adv &gt; tbody &gt; tr:nth-of-type(4) &gt; td &gt; iframe&quot;,&quot;body &gt; .container &gt; .row &gt; div &gt; .panel.panel-default &gt; div &gt; .books_demo &gt; li:nth-of-type(1) &gt; table &gt; tbody &gt; tr &gt; td &gt; a:nth-of-type(2)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.15 (foreground color: #428bca, background color: #99ccff, font size: 10.5pt, font weight: normal)
+
+
+2) Frames must have unique title attribute: https://dequeuniversity.com/rules/axe/2.0/frame-title?application=axeAPI
+  a) [&quot;body &gt; .content &gt; tbody &gt; tr:nth-of-type(1) &gt; td:nth-of-type(3) &gt; .right_adv &gt; tbody &gt; tr:nth-of-type(4) &gt; td &gt; iframe&quot;]
+    Fix any of the following:
+      Element has no title attribute or the title attribute is empty
+
+
+3) &lt;html&gt; element must have a lang attribute: https://dequeuniversity.com/rules/axe/2.0/html-has-lang?application=axeAPI
+  a) [&quot;html&quot;]
+    Fix any of the following:
+      The &lt;html&gt; element does not have a lang attribute
+
+
+  b) [&quot;body &gt; .content &gt; tbody &gt; tr:nth-of-type(1) &gt; td:nth-of-type(3) &gt; .right_adv &gt; tbody &gt; tr:nth-of-type(4) &gt; td &gt; iframe&quot;,&quot;html&quot;]
+    Fix any of the following:
+      The &lt;html&gt; element does not have a lang attribute
+
+
+4) Images must have alternate text: https://dequeuniversity.com/rules/axe/2.0/image-alt?application=axeAPI
+  a) [&quot;body &gt; .content &gt; tbody &gt; tr:nth-of-type(1) &gt; td:nth-of-type(3) &gt; .right_adv &gt; tbody &gt; tr:nth-of-type(4) &gt; td &gt; iframe&quot;,&quot;body &gt; .container &gt; .row &gt; div &gt; .panel.panel-default &gt; div &gt; .books_demo &gt; li:nth-of-type(1) &gt; table &gt; tbody &gt; tr &gt; td &gt; a:nth-of-type(1) &gt; img&quot;]
+    Fix any of the following:
+      Element does not have an alt attribute
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible
+      Element has no title attribute or the title attribute is empty
+      Element&apos;s default semantics were not overridden with role=&quot;presentation&quot;
+      Element&apos;s default semantics were not overridden with role=&quot;none&quot;
+
+
+5) Form elements must have labels: https://dequeuniversity.com/rules/axe/2.0/label?application=axeAPI
+  a) [&quot;#username_show&quot;]
+    Fix any of the following:
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible
+      Form element does not have an implicit (wrapped) &lt;label&gt;
+      Form element does not have an explicit &lt;label&gt;
+      Element has no title attribute or the title attribute is empty
+
+
+  b) [&quot;#location&quot;]
+    Fix any of the following:
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible
+      Form element does not have an implicit (wrapped) &lt;label&gt;
+      Form element does not have an explicit &lt;label&gt;
+      Element has no title attribute or the title attribute is empty
+
+
+  c) [&quot;#hotels&quot;]
+    Fix any of the following:
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible
+      Form element does not have an implicit (wrapped) &lt;label&gt;
+      Form element does not have an explicit &lt;label&gt;
+      Element has no title attribute or the title attribute is empty
+
+
+  d) [&quot;#room_type&quot;]
+    Fix any of the following:
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible
+      Form element does not have an implicit (wrapped) &lt;label&gt;
+      Form element does not have an explicit &lt;label&gt;
+      Element has no title attribute or the title attribute is empty
+
+
+  e) [&quot;#room_nos&quot;]
+    Fix any of the following:
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible
+      Form element does not have an implicit (wrapped) &lt;label&gt;
+      Form element does not have an explicit &lt;label&gt;
+      Element has no title attribute or the title attribute is empty
+
+
+  f) [&quot;#datepick_in&quot;]
+    Fix any of the following:
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible
+      Form element does not have an implicit (wrapped) &lt;label&gt;
+      Form element does not have an explicit &lt;label&gt;
+      Element has no title attribute or the title attribute is empty
+
+
+  g) [&quot;#datepick_out&quot;]
+    Fix any of the following:
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible
+      Form element does not have an implicit (wrapped) &lt;label&gt;
+      Form element does not have an explicit &lt;label&gt;
+      Element has no title attribute or the title attribute is empty
+
+
+  h) [&quot;#adult_room&quot;]
+    Fix any of the following:
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible
+      Form element does not have an implicit (wrapped) &lt;label&gt;
+      Form element does not have an explicit &lt;label&gt;
+      Element has no title attribute or the title attribute is empty
+
+
+  i) [&quot;#child_room&quot;]
+    Fix any of the following:
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible
+      Form element does not have an implicit (wrapped) &lt;label&gt;
+      Form element does not have an explicit &lt;label&gt;
+      Element has no title attribute or the title attribute is empty
+
+
+6) Links must have discernible text: https://dequeuniversity.com/rules/axe/2.0/link-name?application=axeAPI
+  a) [&quot;body &gt; .content &gt; tbody &gt; tr:nth-of-type(1) &gt; td:nth-of-type(3) &gt; .right_adv &gt; tbody &gt; tr:nth-of-type(4) &gt; td &gt; iframe&quot;,&quot;body &gt; .container &gt; .row &gt; div &gt; .panel.panel-default &gt; div &gt; .books_demo &gt; li:nth-of-type(1) &gt; table &gt; tbody &gt; tr &gt; td &gt; a:nth-of-type(1)&quot;]
+    Fix all of the following:
+      Element is in tab order and does not have accessible text
+
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible
+      Element&apos;s default semantics were not overridden with role=&quot;presentation&quot;
+      Element&apos;s default semantics were not overridden with role=&quot;none&quot;
+
+
+7) Data or header cells should not be used to give caption to a data table.: https://dequeuniversity.com/rules/axe/2.0/table-fake-caption?application=axeAPI
+  a) [&quot;#search_form &gt; .login&quot;]
+    Fix all of the following:
+      The first row of the table should be a caption instead of a table cell
+
+ expected [true] but found [false]
+	at com.java.TestSuitDriver.TestSuitRun.ScriptExecution(TestSuitRun.java:181)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

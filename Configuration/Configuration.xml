@@ -1,0 +1,10 @@
+<Configuration>
+	<testConfig run = "false">
+		<TestInputSheet>Input.xlsx</TestInputSheet>
+		<Browser>Firefox</Browser>
+	</testConfig>
+	<testConfig run = "true">
+		<TestInputSheet>Input.xlsx</TestInputSheet>
+		<Browser>Chrome</Browser>
+		<TimeOut>30</TimeOut></testConfig>
+</Configuration>

@@ -1,0 +1,36 @@
+<suite name="ADATesting" parallel="tests" thread-count="2">
+    <test name="Chrome1">
+        <parameter name="InputSheet" value="Input.xlsx" />
+        <parameter name="Browser" value="chrome" />
+        <parameter name="TestCaseID" value="1-1" />
+        <parameter name="WaitTime" value="20" />
+        <classes>
+            <class name="com.java.TestSuitDriver.TestSuitRun" />
+        </classes>
+    </test>
+   <test name="Chrome2">
+        <parameter name="InputSheet" value="Input.xlsx" />
+        <parameter name="Browser" value="chrome" />
+        <parameter name="TestCaseID" value="2-2" />
+        <parameter name="WaitTime" value="20" />
+        <classes>
+            <class name="com.java.TestSuitDriver.TestSuitRun" />
+        </classes>
+    </test>
+    <!-- test name="ChromeTest">
+        <parameter name="InputSheet" value="Reshop.xlsx" />
+        <parameter name="Browser" value="Chrome" />
+        <parameter name="WaitTime" value="60" />
+        <classes>
+            <class name="com.java.TestSuitDriver.TestSuitRun" />
+        </classes>
+    </test -->    
+    <!-- test name="IETest">
+        <parameter name="InputSheet" value="Reshop.xlsx" />
+        <parameter name="Browser" value="IE" />
+        <parameter name="WaitTime" value="120" />
+        <classes>
+            <class name="com.java.TestSuitDriver.TestSuitRun" />
+        </classes>
+    </test -->
+</suite>

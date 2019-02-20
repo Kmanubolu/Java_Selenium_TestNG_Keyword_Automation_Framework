@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-ADATesting">
+              <span class="suite-name border-failed">ADATesting</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-ADATesting">
+                    <span>C:\Selenium\WorkSpace\AutomationFramework_New\Testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-ADATesting">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-ADATesting">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-ADATesting">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-ADATesting">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-ADATesting">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-ADATesting">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-ADATesting" class="hide-methods failed suite-ADATesting"> (hide)</a> <!-- hide-methods failed suite-ADATesting -->
+                      <a href="#" panel-name="suite-ADATesting" class="show-methods failed suite-ADATesting"> (show)</a> <!-- show-methods failed suite-ADATesting -->
+                    </span>
+                    <div class="method-list-content failed suite-ADATesting">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ADATesting" title="com.java.TestSuitDriver.TestSuitRun" hash-for-method="ScriptExecution(1, Search Hotel)">ScriptExecution(1, Search Hotel)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-ADATesting -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-ADATesting" class="panel ADATesting">
+          <div class="suite-ADATesting-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.java.TestSuitDriver.TestSuitRun</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ScriptExecution(1, Search Hotel)">
+                  </a> <!-- ScriptExecution(1, Search Hotel) -->
+                  <span class="method-name">ScriptExecution</span>
+                  <span class="parameters">(1, Search Hotel)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	
+
+******** Home_Page: Found 4 accessibility violations:
+1) Page must have means to bypass repeated blocks: https://dequeuniversity.com/rules/axe/2.0/bypass?application=axeAPI
+  a) [&quot;html&quot;]
+    Fix any of the following:
+      No valid skip link found
+      Page does not have a header
+      Page does not have a landmark region
+
+
+2) &lt;html&gt; element must have a lang attribute: https://dequeuniversity.com/rules/axe/2.0/html-has-lang?application=axeAPI
+  a) [&quot;html&quot;]
+    Fix any of the following:
+      The &lt;html&gt; element does not have a lang attribute
+
+
+3) Form elements must have labels: https://dequeuniversity.com/rules/axe/2.0/label?application=axeAPI
+  a) [&quot;#username&quot;]
+    Fix any of the following:
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible
+      Form element does not have an implicit (wrapped) &lt;label&gt;
+      Form element does not have an explicit &lt;label&gt;
+      Element has no title attribute or the title attribute is empty
+
+
+  b) [&quot;#password&quot;]
+    Fix any of the following:
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible
+      Form element does not have an implicit (wrapped) &lt;label&gt;
+      Form element does not have an explicit &lt;label&gt;
+      Element has no title attribute or the title attribute is empty
+
+
+4) Data or header cells should not be used to give caption to a data table.: https://dequeuniversity.com/rules/axe/2.0/table-fake-caption?application=axeAPI
+  a) [&quot;#login_form &gt; .login&quot;]
+    Fix all of the following:
+      The first row of the table should be a caption instead of a table cell
+
+
+
+******** FlightSearch Page: Found 7 accessibility violations:
+1) Elements must have sufficient color contrast: https://dequeuniversity.com/rules/axe/2.0/color-contrast?application=axeAPI
+  a) [&quot;#search_form &gt; .login &gt; tbody &gt; tr:nth-of-type(2) &gt; td:nth-of-type(1) &gt; .reg_error&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.45 (foreground color: #ff0000, background color: #eeeeee, font size: 9.0pt, font weight: normal)
+
+
+  b) [&quot;#search_form &gt; .login &gt; tbody &gt; tr:nth-of-type(5) &gt; td:nth-of-type(1) &gt; .reg_error&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.45 (foreground color: #ff0000, background color: #eeeeee, font size: 9.0pt, font weight: normal)
+
+
+  c) [&quot;#search_form &gt; .login &gt; tbody &gt; tr:nth-of-type(6) &gt; td:nth-of-type(1) &gt; .reg_error&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.45 (foreground color: #ff0000, background color: #eeeeee, font size: 9.0pt, font weight: normal)
+
+
+  d) [&quot;#search_form &gt; .login &gt; tbody &gt; tr:nth-of-type(7) &gt; td:nth-of-type(1) &gt; .reg_error&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.45 (foreground color: #ff0000, background color: #eeeeee, font size: 9.0pt, font weight: normal)
+
+
+  e) [&quot;#search_form &gt; .login &gt; tbody &gt; tr:nth-of-type(8) &gt; td:nth-of-type(1) &gt; .reg_error&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.45 (foreground color: #ff0000, background color: #eeeeee, font size: 9.0pt, font weight: normal)
+
+
+  f) [&quot;body &gt; .content &gt; tbody &gt; tr:nth-of-type(1) &gt; td:nth-of-type(3) &gt; .right_adv &gt; tbody &gt; tr:nth-of-type(4) &gt; td &gt; iframe&quot;,&quot;body &gt; .container &gt; .row &gt; div &gt; .panel.panel-default &gt; div &gt; .books_demo &gt; li:nth-of-type(1) &gt; table &gt; tbody &gt; tr &gt; td &gt; a:nth-of-type(2)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.15 (foreground color: #428bca, background color: #99ccff, font size: 10.5pt, font weight: normal)
+
+
+2) Frames must have unique title attribute: https://dequeuniversity.com/rules/axe/2.0/frame-title?application=axeAPI
+  a) [&quot;body &gt; .content &gt; tbody &gt; tr:nth-of-type(1) &gt; td:nth-of-type(3) &gt; .right_adv &gt; tbody &gt; tr:nth-of-type(4) &gt; td &gt; iframe&quot;]
+    Fix any of the following:
+      Element has no title attribute or the title attribute is empty
+
+
+3) &lt;html&gt; element must have a lang attribute: https://dequeuniversity.com/rules/axe/2.0/html-has-lang?application=axeAPI
+  a) [&quot;html&quot;]
+    Fix any of the following:
+      The &lt;html&gt; element does not have a lang attribute
+
+
+  b) [&quot;body &gt; .content &gt; tbody &gt; tr:nth-of-type(1) &gt; td:nth-of-type(3) &gt; .right_adv &gt; tbody &gt; tr:nth-of-type(4) &gt; td &gt; iframe&quot;,&quot;html&quot;]
+    Fix any of the following:
+      The &lt;html&gt; element does not have a lang attribute
+
+
+4) Images must have alternate text: https://dequeuniversity.com/rules/axe/2.0/image-alt?application=axeAPI
+  a) [&quot;body &gt; .content &gt; tbody &gt; tr:nth-of-type(1) &gt; td:nth-of-type(3) &gt; .right_adv &gt; tbody &gt; tr:nth-of-type(4) &gt; td &gt; iframe&quot;,&quot;body &gt; .container &gt; .row &gt; div &gt; .panel.panel-default &gt; div &gt; .books_demo &gt; li:nth-of-type(1) &gt; table &gt; tbody &gt; tr &gt; td &gt; a:nth-of-type(1) &gt; img&quot;]
+    Fix any of the following:
+      Element does not have an alt attribute
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible
+      Element has no title attribute or the title attribute is empty
+      Element&apos;s default semantics were not overridden with role=&quot;presentation&quot;
+      Element&apos;s default semantics were not overridden with role=&quot;none&quot;
+
+
+5) Form elements must have labels: https://dequeuniversity.com/rules/axe/2.0/label?application=axeAPI
+  a) [&quot;#username_show&quot;]
+    Fix any of the following:
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible
+      Form element does not have an implicit (wrapped) &lt;label&gt;
+      Form element does not have an explicit &lt;label&gt;
+      Element has no title attribute or the title attribute is empty
+
+
+  b) [&quot;#location&quot;]
+    Fix any of the following:
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible
+      Form element does not have an implicit (wrapped) &lt;label&gt;
+      Form element does not have an explicit &lt;label&gt;
+      Element has no title attribute or the title attribute is empty
+
+
+  c) [&quot;#hotels&quot;]
+    Fix any of the following:
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible
+      Form element does not have an implicit (wrapped) &lt;label&gt;
+      Form element does not have an explicit &lt;label&gt;
+      Element has no title attribute or the title attribute is empty
+
+
+  d) [&quot;#room_type&quot;]
+    Fix any of the following:
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible
+      Form element does not have an implicit (wrapped) &lt;label&gt;
+      Form element does not have an explicit &lt;label&gt;
+      Element has no title attribute or the title attribute is empty
+
+
+  e) [&quot;#room_nos&quot;]
+    Fix any of the following:
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible
+      Form element does not have an implicit (wrapped) &lt;label&gt;
+      Form element does not have an explicit &lt;label&gt;
+      Element has no title attribute or the title attribute is empty
+
+
+  f) [&quot;#datepick_in&quot;]
+    Fix any of the following:
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible
+      Form element does not have an implicit (wrapped) &lt;label&gt;
+      Form element does not have an explicit &lt;label&gt;
+      Element has no title attribute or the title attribute is empty
+
+
+  g) [&quot;#datepick_out&quot;]
+    Fix any of the following:
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible
+      Form element does not have an implicit (wrapped) &lt;label&gt;
+      Form element does not have an explicit &lt;label&gt;
+      Element has no title attribute or the title attribute is empty
+
+
+  h) [&quot;#adult_room&quot;]
+    Fix any of the following:
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible
+      Form element does not have an implicit (wrapped) &lt;label&gt;
+      Form element does not have an explicit &lt;label&gt;
+      Element has no title attribute or the title attribute is empty
+
+
+  i) [&quot;#child_room&quot;]
+    Fix any of the following:
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible
+      Form element does not have an implicit (wrapped) &lt;label&gt;
+      Form element does not have an explicit &lt;label&gt;
+      Element has no title attribute or the title attribute is empty
+
+
+6) Links must have discernible text: https://dequeuniversity.com/rules/axe/2.0/link-name?application=axeAPI
+  a) [&quot;body &gt; .content &gt; tbody &gt; tr:nth-of-type(1) &gt; td:nth-of-type(3) &gt; .right_adv &gt; tbody &gt; tr:nth-of-type(4) &gt; td &gt; iframe&quot;,&quot;body &gt; .container &gt; .row &gt; div &gt; .panel.panel-default &gt; div &gt; .books_demo &gt; li:nth-of-type(1) &gt; table &gt; tbody &gt; tr &gt; td &gt; a:nth-of-type(1)&quot;]
+    Fix all of the following:
+      Element is in tab order and does not have accessible text
+
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible
+      Element&apos;s default semantics were not overridden with role=&quot;presentation&quot;
+      Element&apos;s default semantics were not overridden with role=&quot;none&quot;
+
+
+7) Data or header cells should not be used to give caption to a data table.: https://dequeuniversity.com/rules/axe/2.0/table-fake-caption?application=axeAPI
+  a) [&quot;#search_form &gt; .login&quot;]
+    Fix all of the following:
+      The first row of the table should be a caption instead of a table cell
+
+ expected [true] but found [false]
+	at com.java.TestSuitDriver.TestSuitRun.ScriptExecution(TestSuitRun.java:181)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ADATesting-class-failed -->
+        </div> <!-- panel ADATesting -->
+        <div panel-name="test-xml-ADATesting" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Selenium\WorkSpace\AutomationFramework_New\Testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; name=&quot;ADATesting&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test name=&quot;Chrome1&quot;&gt;
+    &lt;parameter name=&quot;TestCaseID&quot; value=&quot;1&quot;/&gt;
+    &lt;parameter name=&quot;WaitTime&quot; value=&quot;20&quot;/&gt;
+    &lt;parameter name=&quot;InputSheet&quot; value=&quot;Input.xlsx&quot;/&gt;
+    &lt;parameter name=&quot;Browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.java.TestSuitDriver.TestSuitRun&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Chrome1 --&gt;
+&lt;/suite&gt; &lt;!-- ADATesting --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-ADATesting" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for ADATesting</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Chrome1 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-ADATesting" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for ADATesting</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-ADATesting" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for ADATesting</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_ADATesting');
+function tableData_ADATesting() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'ScriptExecution')
+data.setCell(0, 2, 'com.java.TestSuitDriver.TestSuitRun')
+data.setCell(0, 3, 20661);
+window.suiteTableData['ADATesting']= { tableData: data, tableDiv: 'times-div-ADATesting'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <div id="times-div-ADATesting">
+              </div> <!-- times-div-ADATesting -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-ADATesting" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for ADATesting</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-ADATesting" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-ADATesting" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.java.TestSuitDriver.TestSuitRun</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">Setup(chrome, 1, Input.xlsx, 20, org.testng.TestRunner@370736d9)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ScriptExecution(1, Search Hotel)</span>
+                <span class="method-start">4194 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">24860 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closereport</span>
+                <span class="method-start">25948 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

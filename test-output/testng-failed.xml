@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [ADATesting]" parallel="tests">
+  <parameter name="TestCaseID" value="1"/>
+  <parameter name="WaitTime" value="20"/>
+  <parameter name="InputSheet" value="Input.xlsx"/>
+  <parameter name="Browser" value="chrome"/>
+  <test name="Chrome1(failed)" parallel="tests">
+    <parameter name="TestCaseID" value="1"/>
+    <parameter name="WaitTime" value="20"/>
+    <parameter name="InputSheet" value="Input.xlsx"/>
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="com.java.TestSuitDriver.TestSuitRun">
+        <methods>
+          <include name="Setup"/>
+          <include name="closereport"/>
+          <include name="closeBrowser"/>
+          <include name="ScriptExecution" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.java.TestSuitDriver.TestSuitRun -->
+    </classes>
+  </test> <!-- Chrome1(failed) -->
+</suite> <!-- Failed suite [ADATesting] -->
